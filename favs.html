@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex flex-wrap justify-between border-4 border-purple-800">
+      
+        <img
+          class="w-15 h-20 absolute  bg-black  lg:w-32 lg:h-40 lg:mr-12 "
+          src="./assets/img/Moviestack_isotipo.png"
+          alt=""
+        />
+        <img
+          class="w-40 h-30 ml-10 relative bg-transparent lg:w-80 lg:h-50 "
+          src="./assets/img/Moviestack_logotipo1.png"
+          alt=""
+        />
+      
+        <nav class="flex justify-center items-center gap-5 pr-5 pl-5 bg-black">
+          <a href="/index.html">HOME</a>
+          <a href="./movies.html">MOVIES</a>
+          <a href="#">FAVS</a>
+        </nav>
+      </header>
+      <main>
+        <img   class="pt-8 w-full" src="./assets/img/bannerFAV.png" alt="">
+        <div id="favContainer" class="flex flex-wrap gap-6 justify-center mt-20"></div>
+      </main>
+      <footer class="text-center border-purple-800 border-2 p-5 mt-10 bg-black">
+        <h2 class="bg-black text-white">MindHub - Cohort #53</h2>
+      </footer>
+    <script src="./favs.js" type="module"></script>
+</body>
+</html>

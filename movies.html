@@ -2,58 +2,61 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="./assets/img/Moviestack_favicon.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
-   <link rel="stylesheet" href="./assets/style/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="./assets/img/Moviestack_favicon.png" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies</title>
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="flex flex-wrap justify-between border-2 border-purple-800   ">
-        <div class="flex flex-wrap ">
-            <img class="w-28 h-30 relative pb-3 bg-black" src="./assets/img/Moviestack_isotipo.png" alt="">
-            <img class="max-w-md h-25 absolute place-self-center pl-15 bg-transparent"
-                src="./assets/img/Moviestack_logotipo1.png" alt="">
-        </div>
-        <nav class=" flex justify-center items-center gap-5 pr-5 pl-5 bg-black ">
-            <a href="/index.html">HOME</a>
-            <a href="#">MOVIES</a>
-            <a href="*">FAVS</a>
-        </nav>
-    </header>
-    <main>
-        <img  class="pt-8  w-full" src="./assets/img/MINI BANNER.png" alt="">
-        <search class=" flex justify-center gap-5 m-5">
-            <input id="inputText" type="text" class="w-60 border-2 border-purple-800" placeholder="Search..">
-            <select name="genre" id="genre" class="w-60 border-2 border-purple-800"> 
-                  <option value="">Genres..</option>
-                <option value="Horror">Horror</option>
-                <option value="Mystery">Mystery</option>
-                <option value="Thriller">Thriller</option>
-                <option value="Action">Action</option>
-                <option value="Drama">Drama</option>
-                <option value="Adventure">Adventure</option>
-                <option value="Crime">Crime</option>
-                <option value="Fantasy">Fantasy</option>
-                <option value="Comedy">Comedy</option>
-                <option value="Animation">Animation</option>
-                <option value="Family">Family</option>
-                <option value="Romance">Romance</option>
-                <option value="Science Fiction">Science Fiction</option>
-                <option value="History">History</option>  
-            </select>
-        </search>
-        <div id="container1" class="flex flex-wrap m-10 justify-center gap-5 ">
-        
-        </div>
+  <header class="flex flex-wrap justify-between border-4 border-purple-800">
 
-    </main>
-    <footer class="text-center border-purple-800 border-2 p-5 mt-10  bg-black">
-        <h2 class="bg-black text-white">MindHub - Cohort #53 </h2>
-    </footer>
-    <script src="./data.js"></script>
-    <script src="./main.js"></script>
+    <img class="w-15 h-20 absolute  bg-black  lg:w-32 lg:h-40 lg:mr-12 " src="./assets/img/Moviestack_isotipo.png"
+      alt="" />
+    <img class="w-40 h-30 ml-10 relative bg-transparent lg:w-80 lg:h-50 " src="./assets/img/Moviestack_logotipo1.png"
+      alt="" />
+
+    <nav class="flex justify-center items-center gap-5 pr-5 pl-5 bg-black">
+      <a href="/index.html">HOME</a>
+      <a href="#">MOVIES</a>
+      <a href="./favs.html">FAVS</a>
+    </nav>
+  </header>
+  <main>
+    <img class="pt-8 w-full" src="./assets/img/MINI BANNER.png" alt="" />
+    <search class="flex justify-center gap-5 m-5">
+      <input id="inputText" type="text" class="w-60 border-2 border-purple-800" placeholder="Search.." />
+      <select name="genre" id="genre" class="w-60 border-2 border-purple-800">
+        <option value="">Genres..</option>
+        <option value="Action">Action</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Animation">Animation</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Crime">Crime</option>
+        <option value="Drama">Drama</option>
+        <option value="Family">Family</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="History">History</option>
+        <option value="Horror">Horror</option>
+        <option value="Music">Music</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Romance">Romance</option>
+        <option value="Science Fiction">Science Fiction</option>
+        <option value="Thriller">Thriller</option>
+        <option value="War">War</option>
+        <option value="Western">Western</option>
+
+      </select>
+    </search>
+    <div id="container1" class="flex flex-wrap m-10 justify-center gap-5"></div>
+  </main>
+  <footer class="text-center border-purple-800 border-2 p-5 mt-10 bg-black">
+    <h2 class="bg-black text-white">MindHub - Cohort #53</h2>
+  </footer>
+  <script src="./main.js" type="module"></script>
+  <script src="./favs.js" type="module"></script>
 </body>
+
 </html>
